@@ -1,6 +1,15 @@
 body {
-    background-image: url("../images/autumn-leaf-background-texture.png");
+    background-image: url("../images/Lonicera_caprifolium_(dessin).jpg");
         background-size: cover;
-        background-repeat: no-repeat;
 
+}
+
+ .about-us-content {
+margin:0 0 25px;
+overflow:hidden;
+padding:20px;
+background-color:#f9f8fd;
+border:1px solid #afcde3;
+-webkit-border-radius: 10px;
+border-radius: 10px;
 }
