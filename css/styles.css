@@ -1,15 +1,27 @@
 body {
     background-image: url("../images/Lonicera_caprifolium_(dessin).jpg");
-        background-size: cover;
-
+    background-size: cover;
 }
 
- .about-us-content {
-margin:0 0 25px;
+ .text-content {
+margin:0 0 25px 25%;
 overflow:hidden;
 padding:20px;
 background-color:#f9f8fd;
 border:1px solid #afcde3;
 -webkit-border-radius: 10px;
 border-radius: 10px;
+width: 50%;
+}
+
+.portfolio-photo img {
+  width:100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-photo img {
+    width: 70%;
+    margin-left:15%;
+    margin-bottom: 25px;
+  }
 }
