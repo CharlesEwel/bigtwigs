@@ -1,9 +1,9 @@
 body {
-    background-image: url("../images/Homepage 3.jpg");
+    background-image: url("../images/Homepage 4.jpg");
     background-repeat: no-repeat;
-    background-color: #cbd2d5;
-    background-position: 0px, 60px;
-    height: 100%;
+    background-color: #84cc74;
+    /* background-position: 0px, 60px;
+    height: 100%; */
     background-size: cover;
 }
 
@@ -21,6 +21,10 @@ width: 50%;
 .portfolio-photo img {
   width:100%;
   margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: #669966;
 }
 
 #overlayImage {
