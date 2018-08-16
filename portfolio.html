@@ -44,16 +44,41 @@
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a mi a erat tempus elementum. Vestibulum auctor libero est, condimentum commodo dolor aliquet et. Phasellus vel tellus sit amet nibh rutrum iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin vel egestas felis. Etiam non molestie felis, at accumsan felis. Aenean erat felis, egestas in blandit a, tempus ac metus. Aliquam lacus tortor, lobortis at convallis eu, maximus eu dui. Nullam eget erat blandit, facilisis lectus a, dapibus est. Suspendisse potenti. Proin tincidunt tempor odio nec dictum.</p>
       </div>
       <div class="row">
-        <div class="col-sm-4 portfolio-photo">
-          <img src="images/IMAG1257.jpg" alt="Tiles in the Ground">
+        <div class="col-sm-6 portfolio-photo">
+          <img onclick="openNav('images/TilesBefore.jpg')" src="images/TilesBefore.jpg" alt="Messy Yard">
         </div>
-        <div class="col-sm-4 portfolio-photo">
-          <img src="images/IMAG1260.jpg" alt="Tiles in the Ground with Dog">
-        </div>
-        <div class="col-sm-4 portfolio-photo">
-          <img src="images/IMAG1260.jpg" alt="Tiles in the Ground with Dog">
+        <div class="col-sm-6 portfolio-photo">
+          <img onclick="openNav('images/TilesAfter.jpg')" src="images/TilesAfter.jpg" alt="Same Yard with Tiles">
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-6 portfolio-photo">
+          <img onclick="openNav('images/FenceBefore.jpg')" src="images/FenceBefore.jpg" alt="Messy Yard">
+        </div>
+        <div class="col-sm-6 portfolio-photo">
+          <img onclick="openNav('images/FenceAfter.jpg')" src="images/FenceAfter.jpg" alt="Same Yard with Tiles">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 portfolio-photo">
+          <img onclick="openNav('images/DoorBefore.jpg')" src="images/DoorBefore.jpg" alt="Messy Yard">
+        </div>
+        <div class="col-sm-6 portfolio-photo">
+          <img onclick="openNav('images/DoorAfter.jpg')" src="images/DoorAfter.jpg" alt="Same Yard with Tiles">
+        </div>
+      </div>
+    </div>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <img id="overlayImage">
+      </div>
+
     </div>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
