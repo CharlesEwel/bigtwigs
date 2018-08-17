@@ -43,22 +43,22 @@
         <br>
         <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzViAqd-5_ueHqG4an2gS5DfuwXankozf6UI2_uZw/exec">
           <label for="name">Name</label>
-          <input id="name" class="form-control" type="text" required>
+          <input name="name" class="form-control" type="text" required>
           <label for="phone">Phone Number</label>
-          <input id="phone" class="form-control" type="tel" required>
+          <input name="phone" class="form-control" type="tel" required>
           <label for="email">Email</label>
-          <input id="email" class="form-control" type="email" required>
+          <input name="email" class="form-control" type="email" required>
           <label for="address">Address Line 1</label>
-          <input id="address" class="form-control" type="text" required>
+          <input name="address" class="form-control" type="text" required>
           <label for="city">City</label>
-          <input id="city" class="form-control" type="text" required>
+          <input name="city" class="form-control" type="text" required>
           <label for="state">State</label>
-          <input id="state" class="form-control" type="text" required>
+          <input name="state" class="form-control" type="text" required>
           <label for="zip">Zip Code</label>
-          <input id="zip" class="form-control" type="text" required>
+          <input name="zip" class="form-control" type="text" required>
           <label for="description">(Optional) Tell us a little about what you'd like to have done</label>
-          <textarea id="description" class="form-control" rows="10" cols="30"></textarea>
-          <button onclick="toggleForm()" class="btn btn-primary">Submit</button>
+          <textarea name="description" class="form-control" rows="10" cols="30"></textarea>
+          <button type="submit" onclick="toggleForm()" class="btn btn-primary">Submit</button>
         </form>
       </div>
       <div id="thank-you" class="container text-content" style="display: hidden">
