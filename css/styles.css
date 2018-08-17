@@ -28,6 +28,10 @@ width: 50%;
   font-family: Papyrus;
 }
 
+.navbar a {
+  color: black !important
+}
+
 #overlayImage {
   width: 70%;
   margin-top: -5%;
