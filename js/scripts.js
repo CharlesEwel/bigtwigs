@@ -1,11 +1,43 @@
-// $(document).ready(function() {
-//     $("form#consultation").submit(function(event) {
-//         var name = $("input#name").val();
-//         $("div#form-holder").toggle();
-//         $("div#thank-you").toggle();
-//         event.preventDefault();
-//     });
-// });
+$(document).ready(function() {
+
+    // process the form
+    $('form#gform').submit(function(event) {
+
+        // get the form data
+        // there are many ways to get this data using jQuery (you can use the class or id also)
+        var formData = {
+            'name'              : $('input[name=name]').val(),
+            'email'             : $('input[name=email]').val(),
+            'phone'             : $('input[name=phone]').val(),
+            'address'              : $('input[name=address]').val(),
+            'city'             : $('input[name=city]').val(),
+            'state'             : $('input[name=state]').val(),
+            'zip'              : $('input[name=zip]').val(),
+            'description'             : $('textarea[name=description]').val()
+        };
+
+        // process the form
+        $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : 'https://script.google.com/macros/s/AKfycbzViAqd-5_ueHqG4an2gS5DfuwXankozf6UI2_uZw/exec', // the url where we want to POST
+            data        : formData, // our data object
+            dataType    : 'json', // what type of data do we expect back from the server
+                        encode          : true
+        })
+            // using the done promise callback
+            .done(function(data) {
+
+                // log data to the console so we can see
+                console.log(data);
+
+                // here we will handle errors and validation messages
+            });
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
+    });
+
+});
 
 function toggleForm() {
   $("div#form-holder").toggle();
