@@ -41,7 +41,7 @@
       <div id="form-holder" class="container text-content">
         <h2>Fill out this form to schedule a consultation:</h2>
         <br>
-        <form id="consultation">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzViAqd-5_ueHqG4an2gS5DfuwXankozf6UI2_uZw/exec">
           <label for="name">Name</label>
           <input id="name" class="form-control" type="text" required>
           <label for="phone">Phone Number</label>
@@ -58,7 +58,7 @@
           <input id="zip" class="form-control" type="text" required>
           <label for="description">(Optional) Tell us a little about what you'd like to have done</label>
           <textarea id="description" class="form-control" rows="10" cols="30"></textarea>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button onclick="toggleForm()" class="btn btn-primary">Submit</button>
         </form>
       </div>
       <div id="thank-you" class="container text-content" style="display: hidden">
