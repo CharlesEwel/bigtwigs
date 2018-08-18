@@ -116,4 +116,8 @@ input {
  margin-left: 15%;
  width: 70%;
  }
+
+ body {
+   background-image: url("../images/Homepage Mobile 1.jpg");
+ }
 }
