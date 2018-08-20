@@ -1,9 +1,8 @@
 body {
-    background-image: url("../images/Homepage 4.jpg");
-    background-repeat: no-repeat;
-    background-color: #84cc74;
-    /* background-position: 0px, 60px;
-    height: 100%; */
+    background: url("../images/Homepage 4.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
