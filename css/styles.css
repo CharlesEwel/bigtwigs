@@ -1,15 +1,16 @@
 body {
-    background: url("../images/Homepage 4.jpg");
-    -webkit-background-size: cover;
+    background: url("../images/Homepage 4.jpg") no-repeat;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
+    background-position: top center;
     background-size: cover;
-
 }
 
-.main-page {
-  min-height: 100%
+html {
+    height: 100%;
 }
+
 
 .navbar {
   max-width: 440px;
@@ -127,20 +128,22 @@ input {
 
  }
 
- body {
-    background: url("../images/Homepage Mobile 1.jpg") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover !important;
-  }
-
   .navbar {
     max-width: 60%;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+}
+
+@media only screen and (max-width: 578px) {
+
+ body {
+    background: url("../images/Homepage Mobile 1.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
   }
 
 }
