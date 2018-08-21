@@ -14,10 +14,8 @@ html {
 
 .navbar {
   max-width: 440px;
-  left: 0;
-  right: 0;
+  left: 30px;
   margin-left: auto;
-  margin-right: auto;
   background-color: #669966;
   font-family: Papyrus;
 }
