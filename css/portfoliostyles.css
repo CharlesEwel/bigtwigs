@@ -1,4 +1,5 @@
 body {
-    background-image: url("../images/A_description_of_the_genus_Pinus_(Tab._4)_(7797268380).jpg");
+    background: url("../images/A_description_of_the_genus_Pinus_(Tab._4)_(7797268380).jpg");
+    background-position: top center;
     background-size: cover;
 }

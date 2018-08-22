@@ -21,6 +21,14 @@ html {
   color: #ffd9ffgf;
 }
 
+.navbar .dropdown-menu li {
+  background-color: #92ab4c;
+}
+
+.navbar .dropdown-menu {
+  background-color: #92ab4c;
+}
+
 .navbar li.active a {
   background-color: #ff9a9a1a;
 }
