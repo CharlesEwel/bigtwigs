@@ -16,8 +16,17 @@ html {
   max-width: 440px;
   left: 30px;
   margin-left: auto;
-  background-color: #669966;
+  background-color: #ff662640;
   font-family: Papyrus;
+  color: #ffd9ffgf;
+}
+
+.navbar li.active a {
+  background-color: #ff9a9a1a;
+}
+
+.navbar li:hover a {
+  background-color: #482e38 !important;
 }
 
  .text-content {
