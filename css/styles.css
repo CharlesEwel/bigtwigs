@@ -23,12 +23,14 @@ html {
 
 .navbar .dropdown-menu li {
   background-color: #92ab4c;
-  color: #c4d7a8;
 }
 
 .navbar .dropdown-menu {
   background-color: #92ab4c;
-  color: #c4d7a8;
+}
+
+.navbar li a {
+  color: #c4d7a8 !important;
 }
 
 .navbar li.active a {
