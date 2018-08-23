@@ -1,5 +1,6 @@
 body {
-    background-image: url("../images/Arctostaphylos_uva-ursi_Atlas_Alpenflora.jpg");
+    background: url("../images/Arctostaphylos_uva-ursi_Atlas_Alpenflora.jpg");
+    background-position: top center;
     background-size: cover;
 }
 

@@ -16,21 +16,23 @@ html {
   max-width: 440px;
   left: 30px;
   margin-left: auto;
-  background-color: #ff662640;
+  background-color: #662640;
   font-family: Papyrus;
-  color: #ffd9ffgf;
+  color: #c4d7a8;
 }
 
 .navbar .dropdown-menu li {
   background-color: #92ab4c;
+  color: #c4d7a8;
 }
 
 .navbar .dropdown-menu {
   background-color: #92ab4c;
+  color: #c4d7a8;
 }
 
 .navbar li.active a {
-  background-color: #ff9a9a1a;
+  background-color: #9a9a1a;
 }
 
 .navbar li:hover a {

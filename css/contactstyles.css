@@ -1,4 +1,5 @@
 body {
-    background-image: url("../images/FMIB_41786_Sassafras.jpeg");
+    background: url("../images/FMIB_41786_Sassafras.jpeg");
+    background-position: top center;
     background-size: cover;
 }
