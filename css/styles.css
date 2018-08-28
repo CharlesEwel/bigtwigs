@@ -8,10 +8,20 @@ html {
     height: 100%;
 }
 
-.transparent-background {
-  background-color: #fffff5e6;
+.text-content {
+  margin:0 0 25px 25%;
+  overflow:hidden;
+  padding:20px;
+  background-color:#f9f8fd;
+  border:1px solid #afcde3;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 50%;
 }
 
+.transparent-background {
+  background-color: #fffff5e6 !important;
+}
 
 .navbar {
   max-width: 440px;
@@ -40,17 +50,6 @@ html {
 
 .navbar li:hover a {
   background-color: #482e38 !important;
-}
-
- .text-content {
-margin:0 0 25px 25%;
-overflow:hidden;
-padding:20px;
-background-color:#f9f8fd;
-border:1px solid #afcde3;
--webkit-border-radius: 10px;
-border-radius: 10px;
-width: 50%;
 }
 
 .portfolio-photo img {
