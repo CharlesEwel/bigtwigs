@@ -12,11 +12,12 @@ html {
   background-color: #fffff5e6;
 }
 
+.nav-container {
+  max-width: 440px;
+  left: 50%;
+}
 
 .navbar {
-  max-width: 440px;
-  left: 30px;
-  margin-left: auto;
   background-color: #662640;
   font-family: Papyrus;
   color: #c4d7a8;
@@ -59,7 +60,7 @@ width: 50%;
 }
 
 .navbar a {
-  color: black !important
+  color: black !important;
 }
 
 #overlayImage {
