@@ -15,6 +15,8 @@ html {
 .nav-container {
   max-width: 440px;
   left: 50%;
+  margin-left: auto;
+  background-color: #662640 !important;
 }
 
 .navbar {
@@ -23,11 +25,19 @@ html {
   color: #c4d7a8;
 }
 
-.navbar .dropdown-menu li {
+nav {
   background-color: #662640;
 }
 
-.navbar .dropdown-menu {
+.navbar .nav-tabs li {
+  background-color: #662640;
+}
+
+.navbar .nav-tabs {
+  background-color: #662640;
+}
+
+#navbarSupportedContent ul {
   background-color: #662640;
 }
 
@@ -35,8 +45,12 @@ html {
   color: #c4d7a8 !important;
 }
 
-.navbar li.active a {
-  background-color: #9a9a1a;
+.active a {
+  background-color: #9a9a1a !important;
+}
+
+.nav li.active {
+  background-color: #9a9a1a !important;
 }
 
 .navbar li:hover a {
@@ -143,10 +157,15 @@ input {
     margin-left:15%;
     margin-bottom: 25px;
   }
+
   .text-content {
  margin-left: 15%;
  width: 70%;
 
+ }
+
+ .navbar-toggler-icon {
+   color: white;
  }
 
   .navbar {
@@ -160,6 +179,12 @@ input {
 }
 
 @media only screen and (max-width: 578px) {
+
+  .nav-container {
+    max-width: 220px;
+    left: 50%;
+    margin-left: auto;
+  }
 
  body {
     background: url("../images/Homepage Mobile 1.jpg") no-repeat;
