@@ -4,12 +4,25 @@ body {
     background-size: cover;
 }
 
+/* body {
+  background: url("../images/Homepage 4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+} */
+
 html {
-    height: 100%;
+  min-height: 1200px;
 }
 
 .transparent-background {
   background-color: #fffff5e6;
+}
+
+.transparent-background {
+  background-color: #fffff5e6 !important;
 }
 
 .nav-container {
@@ -18,6 +31,13 @@ html {
   margin-left: auto;
   background-color: #662640 !important;
   margin-bottom: 15px;
+}
+
+#homepage-referrals {
+  position: absolute;
+  top: 350px;
+  left: 20px;
+  margin-left:0px;
 }
 
 .navbar {
