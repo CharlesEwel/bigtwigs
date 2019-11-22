@@ -3,3 +3,12 @@ body {
     background-position: top center;
     background-size: cover;
 }
+
+.social-media img {
+  width: 50px;
+}
+
+.social-media ul li {
+  list-style: none;
+  list-style-type: none;
+}
