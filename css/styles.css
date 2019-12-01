@@ -33,11 +33,25 @@ html {
   margin-bottom: 15px;
 }
 
-#homepage-referrals {
+#homepage-referrals-left {
   position: absolute;
-  top: 500px;
+  bottom: 10px;
   left: 20px;
   margin-left:0px;
+  width: 40%
+}
+
+#homepage-referrals-right {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin-right:0px;
+  width: 40%
+}
+
+.index-wrapper {
+  position: relative;
+  height: 1350px;
 }
 
 .navbar {
