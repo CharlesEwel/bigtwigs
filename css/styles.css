@@ -1,5 +1,5 @@
 body {
-    background: url("../images/Homepage 4.jpg") no-repeat;
+    background: url("../images/Homepage 4.jpg") repeat;
     background-position: top center;
     background-size: cover;
 }
@@ -69,6 +69,11 @@ html {
     left: 20px;
     margin-left:auto;
     width: 90%
+  }
+
+  .index-wrapper {
+    position: relative;
+    height: 600px;
   }
 }
 
