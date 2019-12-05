@@ -49,6 +49,29 @@ html {
   width: 40%
 }
 
+@media only screen and (max-width: 768px) {
+
+  #homepage-referrals-left {
+    position: absolute;
+    bottom: 260px;
+    left: 20px;
+    right: 20px;
+    margin-right:auto;
+    margin-left:auto;
+    width: 90%
+  }
+
+  #homepage-referrals-right {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    margin-right:auto;
+    left: 20px;
+    margin-left:auto;
+    width: 90%
+  }
+}
+
 .index-wrapper {
   position: relative;
   height: 1350px;
