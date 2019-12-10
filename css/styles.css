@@ -53,7 +53,7 @@ html {
 
   #homepage-referrals-left {
     position: absolute;
-    bottom: 290px;
+    bottom: 260px;
     left: 20px;
     right: 20px;
     margin-right:auto;
@@ -74,6 +74,18 @@ html {
   .index-wrapper {
     position: relative;
     height: 600px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #homepage-referrals-left {
+    bottom: 300px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  #homepage-referrals-left {
+    bottom: 325px;
   }
 }
 
