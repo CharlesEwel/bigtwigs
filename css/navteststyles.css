@@ -13,8 +13,7 @@ html {
 }
 
 .nav-container {
-  max-width: 440px;
-  left: 50%;
+  width: 100%;
   margin-left: auto;
   background-color: #662640 !important;
 }
@@ -169,7 +168,7 @@ input {
  }
 
   .navbar {
-    max-width: 60%;
+    width: 100%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -180,11 +179,10 @@ input {
 
 @media only screen and (max-width: 578px) {
 
-  .nav-container {
-    max-width: 220px;
-    left: 50%;
-    margin-left: auto;
-  }
+    .nav-container {
+        width: 100%;
+        margin-left: auto;
+    }
 
  body {
     background: url("../images/Homepage Mobile 1.jpg") no-repeat;
