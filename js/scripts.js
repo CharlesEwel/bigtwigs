@@ -69,7 +69,7 @@ function startTimer(){
   setInterval(function(){plusSlides(1)}, 5000);
 }
 
-window.onload = function() { setInterval(function(){plusSlides(1)},3000)};
+window.onload = function() { setInterval(function(){plusSlides(1)},5000)};
 
 // Thumbnail image controls
 function currentSlide(n) {
