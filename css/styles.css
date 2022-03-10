@@ -147,7 +147,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 378px) {
+@media only screen and (max-width: 382px) {
   #homepage-referrals-left {
     bottom: 325px;
   }
