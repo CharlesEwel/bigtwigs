@@ -55,6 +55,8 @@ function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
 
+//comment
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
