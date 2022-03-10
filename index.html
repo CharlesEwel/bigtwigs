@@ -6,37 +6,101 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <!-- <link href="css/navteststyles.css" rel="stylesheet" type="text/css"> -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/Favicon.jpg" type="image/x-icon">
+    <link href="http://fonts.cdnfonts.com/css/antique-olive" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
   </head>
   <body>
-    <div class="container index-wrapper">
-      <!--Navbar-->
-      <div class="nav-container">
+    <!--Navbar-->
+    <div class="nav-container">
         <nav class="navbar navbar-expand-md navbar-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav nav-tabs">
-              <li class="nav-item active"><a class="nav-link active" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link"  href="aboutus.html">About Us</a></li>
-              <li class="nav-item"><a class="nav-link"  href="portfolio.html">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link"  href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-      </div>
-      <!--End Navbar-->
-      <div class="container text-content transparent-background" id="homepage-referrals-left">
-        <br>
-        <p> Peter and his crew did an incredible job of turning my backyard in a beautiful, low maintenance garden and patio. Peter planted a garden based on my lifestyle. I now have a yard where I can enjoy a quiet lunch and also host small parties.  I have had many compliments from friends on the both the plants and the patio.</p>
-        <p>--Marsha, SE Portland</p>
-      </div>
-      <div class="container text-content transparent-background" id="homepage-referrals-right">
-        <br>
-        <p>Peter and his team are thorough, timely and do an outstanding job.  They completely overhauled my yard, tore out all of the grass and transformed my yard into a gorgeous modern xeriscaped look that I had been dreaming of, I couldn't be happier with the results.</p>
-        <p>--Aimee, NE Portland</p>
+    </div>
+    <!--End Navbar-->
+    <div class="top-banner">
+      <img src="images/Banner 3.bmp">
+      <div class="banner-text">
+          <div class="field-content">
+              <p>Design, Installation, Maintenance</p>
+          </div>
       </div>
     </div>
+          <div class="row" style="margin-top: 50px;">
+
+              <div class="col-md about-us-text">
+                  <h1>Big Twigs Believes</h1>
+                  <p>that the health of people and the natural environment lie within bringing the two together;</p>
+                  <p>that if you have a landscape you enjoy then you will use it as an extension of your home.</p>
+                  <br>
+                  <p>Using beautifully curated plant palates, efficient and thoughtful maintenance, and creative design solutions, we can transform your yard into a space of relaxation, ease and joy</p>
+              </div>
+              <div class="col-md" style="padding-left: 0px;">
+                  <!--Begin Carousel-->
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container" onload="startTimer()">
+
+                      <!-- Full-width images with number and caption text -->
+                      <div class="mySlides">
+                          <img src="images/Homepage adjusted 5.bmp">
+                      </div>
+
+                      <div class="mySlides">
+                          <img src="images/Carosel 2.bmp">
+                      </div>
+
+                      <div class="mySlides">
+                          <img src="images/Carosel 3.bmp">
+                      </div>
+
+                      <div class="mySlides">
+                          <img src="images/Carosel 4.bmp">
+                      </div>
+
+                      <div class="mySlides">
+                          <img src="images/Carosel 5.bmp">
+                      </div>
+
+                      <!-- Next and previous buttons -->
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <div style="text-align:center; transform: translateY(-60px);">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                      <span class="dot" onclick="currentSlide(5)"></span>
+                  </div>
+                  <!--End Carousel-->
+              </div>
+          </div>
+          <div class="spacer" style="height: 100px;">
+
+          </div>
+          <div class="container text-content transparent-background" id="homepage-referrals-left">
+              <br>
+              <p><i> Peter and his crew did an incredible job of turning my backyard in a beautiful, low maintenance garden and patio. Peter planted a garden based on my lifestyle. I now have a yard where I can enjoy a quiet lunch and also host small parties.  I have had many compliments from friends on the both the plants and the patio.</i></p>
+              <p>--Marsha, SE Portland</p>
+          </div>
+          <div class="container text-content transparent-background" id="homepage-referrals-right">
+              <br>
+              <p><i>Peter and his team are thorough, timely and do an outstanding job.  They completely overhauled my yard, tore out all of the grass and transformed my yard into a gorgeous modern xeriscaped look that I had been dreaming of, I couldn't be happier with the results.</i></p>
+              <p>--Aimee, NE Portland</p>
+          </div>
+      </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <script src="js/scripts.js"></script>
