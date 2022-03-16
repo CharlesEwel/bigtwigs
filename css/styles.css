@@ -1,7 +1,11 @@
-body {
+/* body {
     background: url("../images/Homepage 4.jpg") repeat;
     background-position: top center;
     background-size: cover;
+} */
+
+body {
+  background-color: #649565;
 }
 
 /* body {
@@ -13,6 +17,9 @@ body {
   background-position: top center;
 } */
 
+@import url('http://fonts.cdnfonts.com/css/antique-olive');
+@import url('http://fonts.cdnfonts.com/css/papyrus');
+
 html {
   min-height: 1200px;
 }
@@ -21,50 +28,94 @@ html {
   background-color: #fffff5e6;
 }
 
+.top-banner {
+  height: 500px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.top-spacer {
+  padding-top: 100px;
+}
+
+.top-banner img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.mySlides {
+  height: 100%;
+  display: block;
+}
+
+#homepage-image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 650px;
+  object-fit: cover;
+}
+
+.banner-text {
+  background: rgba(0,0,0,0.3);
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+.banner-text p {
+  color: white;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Antique Olive";
+  margin: 1.5em 0;
+}
+
 .transparent-background {
   background-color: #fffff5e6 !important;
 }
 
 .nav-container {
-  max-width: 440px;
-  left: 50%;
   margin-left: auto;
   background-color: #662640 !important;
-  margin-bottom: 15px;
 }
 
 #homepage-referrals-left {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
   margin-left:0px;
-  width: 40%
+  width: 40%;
+  background-color: #649565 !important;
+  color: #603811 !important;
 }
 
 #homepage-referrals-right {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
   margin-right:0px;
-  width: 40%
+  width: 40%;
+  background-color: #649565 !important;
+  color: #603811 !important;
 }
 
 @media only screen and (max-width: 768px) {
 
   #homepage-referrals-left {
-    position: absolute;
-    bottom: 260px;
-    left: 20px;
-    right: 20px;
     margin-right:auto;
     margin-left:auto;
     width: 90%
   }
 
   #homepage-referrals-right {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
     margin-right:auto;
     left: 20px;
     margin-left:auto;
@@ -83,7 +134,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 378px) {
+@media only screen and (max-width: 382px) {
   #homepage-referrals-left {
     bottom: 325px;
   }
@@ -96,8 +147,12 @@ html {
 
 .navbar {
   background-color: #662640;
-  font-family: Papyrus;
+  font-family: 'Antique Olive', sans-serif;
   color: #c4d7a8;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  font-size: x-large;
 }
 
 nav {
@@ -137,15 +192,33 @@ margin:0 0 25px 25%;
 overflow:hidden;
 padding:20px;
 background-color:#f9f8fd;
-border:1px solid #afcde3;
 -webkit-border-radius: 10px;
 border-radius: 10px;
-width: 50%;
+width: 70%;
 }
 
 .portfolio-photo img {
   width:100%;
   margin-bottom: 10px;
+}
+
+.about-us-text {
+    padding-right: 25px;
+    color: #603811 !important;
+    text-align: center;
+}
+
+.about-us-text h1 {
+  font-family: 'Papyrus', sans-serif;
+  font-size: 100px;
+}
+
+#top-spacing {
+    margin-top: 50px;
+}
+
+.about-us-text p {
+  font-size: 35px;
 }
 
 .navbar a {
@@ -253,16 +326,90 @@ input {
 
 }
 
-@media only screen and (max-width: 578px) {
 
-  .nav-container {
-    max-width: 220px;
-  }
-
- body {
-    background: url("../images/Homepage Mobile 1.jpg") no-repeat;
-    background-position: top center;
-    background-size: cover;
-  }
-
+/* Slideshow container */
+.slideshow-container {
+    height: 650px;
+    width: 100%;
+    position: relative;
 }
+
+.slideshow-container img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0px;
+}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
